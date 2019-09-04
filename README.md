@@ -56,17 +56,15 @@ tacky.organization.plurinacional.bo/null.js?board=4&get=6&lacking=0&learned=4
 
 # Manual
 ## How To Use
-### Simple URL
 ```python
-random_site()
-random_site(subd)
+generate_url(subdomain = True, page = True, arguments = 3, randomArgs = True)
 ```
+**Examples:**
+```python
+generate_url()
+```
+Returns a random URL with a subdomain, page and anywhere from 0 to 3 arguments
 
-### Complex URL
-```python
-random_site() + random_url(0)
-random_site(subd) + random_url(0)
-```
 #### Arguments
 **subd**: (*Boolean*) Generate subdomains (Default = True)
 **args**: (*Integer*) How many arguments to generate (Default = 3)
